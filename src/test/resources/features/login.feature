@@ -1,10 +1,10 @@
 Feature: Login
 
-  @login
+  @login @sanity @regression
   Scenario: I want to access user login page of ndosi website
     Given that i have valid credentials
-    And i input the valid email
-    And also input a valid password
+    And i input the valid email "<email>"
+    And also input a valid password "<password>"
     When click the login button
     Then I should login successfully to the page
 
